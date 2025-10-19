@@ -1,3 +1,50 @@
+/* Top Header */
+.top-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+    background-color: #0f0f0f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    z-index: 1000;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-center {
+    flex: 1;
+    max-width: 600px;
+    margin: 0 40px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* YouTube logo in header */
+.header-left .imageContainer {
+    width: 90px;
+    height: auto;
+}
+
+.header-left .imageContainer img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* General image container (if needed elsewhere) */
 .imageContainer {
     width: 100px;
     height: 20px;
@@ -10,6 +57,46 @@
     object-fit: cover;
 }
 
+/* Sidebar */
+.sidebar {
+    width: 60px;
+    background-color: #0f0f0f;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    height: calc(100vh - 56px);
+    padding: 1px;
+}
+
+.sidebar button {
+    width: 100%;
+    padding: 20px 0;  /* Change from 15px to 8px top/bottom, 0 left/right */
+    background: none;
+    border: none;
+    color: white;
+    text-align: center;  /* Change from left to center */
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar button img {
+    width: 24px;  /* Set consistent size for all sidebar icons */
+    height: 24px;
+}
+
+.sidebar button:hover {
+    background-color: #555;
+}
+
+/* Hamburger in header */
+.top-header .hamburgimg button img {
+    width: 12px;
+    height: auto;
+}
+
 .hamburgimg button {
     background: none;
     border: none;
@@ -20,10 +107,11 @@
 
 .hamburgimg button img {
     display: block;
-    width: 100%; /* or set a specific size like 40px */
+    width: 100%;
     height: auto;
 }
 
+/* Home image */
 .homeimg button {
     background: none;
     border: none;
@@ -34,10 +122,11 @@
 
 .homeimg button img {
     display: block;
-    width: 100%; /* or set a specific size like 40px */
+    width: 100%;
     height: auto;
 }
 
+/* Shorts image */
 .shortsimg {
     display: flex;
     justify-content: center;
@@ -54,10 +143,11 @@
 
 .shortsimg button img {
     display: block;
-    width: 100%; /* or set a specific size like 40px */
+    width: 100%;
     height: auto;
 }
 
+/* Subscriptions image */
 .subsimg button {
     background: none;
     border: none;
@@ -68,10 +158,11 @@
 
 .subsimg button img {
     display: block;
-    width: 100%; /* or set a specific size like 40px */
+    width: 100%;
     height: auto;
 }
 
+/* You image */
 .youimg button {
     background: none;
     border: none;
@@ -82,41 +173,20 @@
 
 .youimg button img {
     display: block;
-    width: 100%; /* or set a specific size like 40px */
+    width: 100%;
     height: auto;
 }
 
-
+/* Container */
 .container {
     display: flex;
     min-height: 100vh;
 }
 
-.sidebar {
-    width: 60px;
-    background-color: #black;
-    position: fixed;
-    height: 100vh;
-    padding: 1px;
-}
-
-.sidebar button {
-    width: 100%;
-    padding: 15px;
-    background: none;
-    border: none;
-    color: white;
-    text-align: left;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.sidebar button:hover {
-    background-color: #555;
-}
-
+/* Main Content */
 .main-content {
-    margin-left: 250px;
+    margin-left: 72px;
+    margin-top: 56px;
     padding: 40px;
     flex: 1;
 }
