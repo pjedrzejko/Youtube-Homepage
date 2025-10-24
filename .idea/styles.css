@@ -110,20 +110,21 @@
     padding-right: 16px;
 }
 
-
 .hamburgimg button img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-/* Home image */
 .homeimg button {
     background: none;
     border: none;
-    padding: 0;
     cursor: pointer;
     display: block;
+    width: 60%;
+}
+.homeimg {
+    padding-left: 16px; /* adds space without affecting image size */
 }
 
 .homeimg button img {
@@ -137,12 +138,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 60%;
+}
+
+.shortsimg {
+    padding-left: 6px; /* adds space without affecting image size */'
+    padding-top: 6px;
 }
 
 .shortsimg button {
     background: none;
     border: none;
-    padding: 0;
+    padding: 0 0 0 8px;
     cursor: pointer;
     display: block;
 }
@@ -153,18 +160,9 @@
     height: auto;
 }
 
-/* Subscriptions image */
-.subsimg button {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    display: block;
-}
-
 .subsimg button img {
     display: block;
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 
@@ -173,13 +171,19 @@
     background: none;
     border: none;
     padding: 0;
+
     cursor: pointer;
     display: block;
 }
 
+.youimg {
+    padding-left: 21px; /* adds space without affecting image size */
+    padding-top: 8px;
+}
+
 .youimg button img {
     display: block;
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 
@@ -195,4 +199,70 @@
     margin-top: 56px;
     padding: 40px;
     flex: 1;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.search-bar input {
+    flex: 1;
+    height: 36px;
+    background-color: #121212;
+    border: 1px solid #303030;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: #fff;
+    padding: 0 12px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-bar input:focus {
+    border-color: #3ea6ff; /* blue border on focus */
+}
+
+.search-btn {
+    height: 36px;
+    width: 64px;
+    background-color: #222;
+    border: 1px solid #303030;
+    border-left: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-btn img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+.mic-btn {
+    margin-left: 10px;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-color: #181818;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mic-btn img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
 }
