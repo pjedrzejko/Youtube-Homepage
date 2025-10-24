@@ -105,6 +105,12 @@
     display: block;
 }
 
+.hamburgimg button {
+    padding-left: 9px;
+    padding-right: 16px;
+}
+
+
 .hamburgimg button img {
     display: block;
     width: 100%;
