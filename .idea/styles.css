@@ -245,7 +245,6 @@
 .search-btn img {
     width: 20px;
     height: 20px;
-    filter: invert(1);
 }
 
 .mic-btn {
@@ -264,5 +263,58 @@
 .mic-btn img {
     width: 20px;
     height: 20px;
-    filter: invert(1);
+}
+
+.create-btn {
+    margin-left: 10px;
+    height: 36px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #181818;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+.create-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.bell-btn {
+    margin-left: 10px;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-color: #181818;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bell-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.profilepic-btn {
+    margin-left: 10px;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-color: #181818;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+.profilepic-btn img {
+    width: 20px;
+    height: 20px;
 }
